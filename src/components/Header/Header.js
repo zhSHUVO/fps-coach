@@ -12,9 +12,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="checkout">Checkout</Nav.Link>
-                            <Nav.Link href="blogs" activeCla>
-                                Blogs
-                            </Nav.Link>
+                            <Nav.Link href="blogs">Blogs</Nav.Link>
                             <Nav.Link href="about">About</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
