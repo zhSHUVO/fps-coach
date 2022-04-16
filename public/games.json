@@ -1,23 +1,23 @@
 [
     {
         "id": "1",
-        "name": "apex",
+        "name": "Apex Legends",
         "price": "50$",
-        "description": "Will tech you the basics and 5 pro tips. Will give gameplay demonstration.",
-        "img": "https://github.com/zhSHUVO/image-repo/blob/main/fps-couch/apex.png"
+        "description": "Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts.",
+        "img": "https://raw.githubusercontent.com/zhSHUVO/image-repo/main/fps-couch/apex-cover.jpg"
     },
     {
         "id": "2",
-        "name": "csgo",
+        "name": "Counter-Strike: Global Offensive",
         "price": "50$",
-        "description": "Will tech you the basics and 5 pro tips. Will give gameplay demonstration.",
-        "img": "https://github.com/zhSHUVO/image-repo/blob/main/fps-couch/csgo.png"
+        "description": "Counter-Strike: Global Offensive is a 2012 multiplayer first-person shooter developed by Valve and Hidden Path Entertainment.",
+        "img": "https://raw.githubusercontent.com/zhSHUVO/image-repo/main/fps-couch/csgo-cover.jpg"
     },
     {
         "id": "3",
-        "name": "r6",
+        "name": "Tom Clancy's Rainbow Six Siege",
         "price": "50$",
-        "description": "Will tech you the basics and 5 pro tips. Will give gameplay demonstration.",
-        "img": "https://github.com/zhSHUVO/image-repo/blob/main/fps-couch/rainbow-six.png"
+        "description": "Tom Clancy's Rainbow Six Siege is an online tactical shooter video game developed by Ubisoft Montreal and published by Ubisoft.",
+        "img": "https://raw.githubusercontent.com/zhSHUVO/image-repo/main/fps-couch/r6-cover.jpg"
     }
 ]

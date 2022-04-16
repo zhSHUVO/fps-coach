@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <div className="banner mt-5 mb-5">
-                <img src={banner} alt="" />
+                <img className="w-100" src={banner} alt="" />
             </div>
             <Lessons></Lessons>
         </div>

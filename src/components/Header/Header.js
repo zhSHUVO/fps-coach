@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import "./Header.css";
 
 const Header = () => {
@@ -7,13 +8,21 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="home">FPS Coach</Navbar.Brand>
+                    <LinkContainer to="/home">
+                        <Navbar.Brand>FPS Coach</Navbar.Brand>
+                    </LinkContainer>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="checkout">Checkout</Nav.Link>
-                            <Nav.Link href="blogs">Blogs</Nav.Link>
-                            <Nav.Link href="about">About</Nav.Link>
+                            <LinkContainer to="/checkout">
+                                <Nav.Link>Checkout</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/blogs">
+                                <Nav.Link>Blogs</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/about">
+                                <Nav.Link>About</Nav.Link>
+                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
