@@ -2,16 +2,22 @@
     {
         "id": "1",
         "name": "apex",
+        "price": "50$",
+        "description": "Will tech you the basics and 5 pro tips. Will give gameplay demonstration.",
         "img": "https://github.com/zhSHUVO/image-repo/blob/main/fps-couch/apex.png"
     },
     {
         "id": "2",
         "name": "csgo",
+        "price": "50$",
+        "description": "Will tech you the basics and 5 pro tips. Will give gameplay demonstration.",
         "img": "https://github.com/zhSHUVO/image-repo/blob/main/fps-couch/csgo.png"
     },
     {
         "id": "3",
         "name": "r6",
+        "price": "50$",
+        "description": "Will tech you the basics and 5 pro tips. Will give gameplay demonstration.",
         "img": "https://github.com/zhSHUVO/image-repo/blob/main/fps-couch/rainbow-six.png"
     }
 ]
