@@ -9,11 +9,13 @@
 .card button {
     position: absolute;
     bottom: 30px;
-    left: 50px;
+    left: 30px;
+    border-radius: 12px;
 }
 
 .card img {
     width: 210px;
     height: 300px;
+    
 }
 

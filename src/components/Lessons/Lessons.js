@@ -20,7 +20,7 @@ const Lessons = (props) => {
                     <div className="col" key={lesson.id}>
                         <div className="card mt-3 p-2">
                             <img
-                                className="mx-auto mb-3"
+                                className="mx-auto mb-3 mt-3"
                                 src={lesson.img}
                                 alt=""
                             />
