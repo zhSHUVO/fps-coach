@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+    useSendPasswordResetEmail,
+    useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -11,6 +14,9 @@ const Login = () => {
 
     const [signInWithEmailAndPassword, user, loading, error] =
         useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail, resetSending, resetError] =
+        useSendPasswordResetEmail(auth);
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -33,11 +39,22 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     };
 
+    if (resetError) {
+        return (
+            <div>
+                <p>Error: {error.message}</p>
+            </div>
+        );
+    }
+    if (resetSending) {
+        return <p>Sending...</p>;
+    }
+
     return (
         <div className="form-container">
             <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
                 <h2 className="form-title mb-4">Login</h2>
-                <Form onSubmit={handleUserSignIn}>
+                <Form className="mb-2" onSubmit={handleUserSignIn}>
                     <Form.Group className="mb-4" controlId="formGroupEmail">
                         <Form.Control
                             onBlur={handleEmailBlur}
@@ -61,10 +78,21 @@ const Login = () => {
                         Login
                     </Button>
                 </Form>
+
+                <Link
+                    className="text-decoration-none text-danger"
+                    to="/reset-pass"
+                >
+                    Forgot Password?
+                </Link>
+
                 <p className="mt-3">
                     New User? <br />
-                    <Link className="text-decoration-none text-danger" to="/signup">
-                         SignUp.
+                    <Link
+                        className="text-decoration-none text-danger"
+                        to="/signup"
+                    >
+                        SignUp.
                     </Link>
                 </p>
             </div>

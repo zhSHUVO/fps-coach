@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
+import ResetPass from "./components/ResetPass/ResetPass";
 import SignUp from "./components/SignUp/SignUp";
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
                 <Route path="/blogs" element={<Blogs></Blogs>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
                 <Route path="/signup" element={<SignUp></SignUp>}></Route>
+                <Route
+                    path="/reset-pass"
+                    element={<ResetPass></ResetPass>}
+                ></Route>
             </Routes>
         </div>
     );
