@@ -1,3 +1,17 @@
-.card{
-    height: 500px;
+.card {
+    height: 600px;
+    position: relative;
+    border: 1px solid #dd1c21;
+    border-radius: 20px;
+}
+
+.card button {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+.card img {
+    width: 210px;
+    height: 300px;
 }

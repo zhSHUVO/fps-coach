@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Lessons.css";
 
 const Lessons = (props) => {
@@ -11,20 +13,24 @@ const Lessons = (props) => {
 
     return (
         <div>
-            <h1>Hello</h1>
-            <p>
-                As a fps couch I'll tech you current games with eSports games
-                and their tectics. I'll try my best to improve you. Some of my
-                services are given below.
-            </p>
-            <div className="lesson d-flex w-75 ">
+            <h1 className="text-center">My Services</h1>
+            <div className="lesson d-flex w-75 mx-auto">
                 {lessons.map((lesson) => (
                     <div key={lesson.id}>
-                        <div className="card p-5">
-                            <img className="w-50" src={lesson.img} alt="" />
+                        <div className="card p-4 m-5">
+                            <img
+                                className="mx-auto mb-3"
+                                src={lesson.img}
+                                alt=""
+                            />
                             <p>{lesson.name}</p>
                             <p>{lesson.description}</p>
                             <p>Trainig Price: {lesson.price}</p>
+                            <Link to="/checkout">
+                                <Button variant="danger" type="submit">
+                                    Checkout
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 ))}
