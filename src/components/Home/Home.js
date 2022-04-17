@@ -15,7 +15,7 @@ const Home = () => {
             <footer className="d-flex flex-column align-items-center pt-3 pb-3 mt-5 bg-dark text-light">
                 <h2>FPS COACH</h2>
 
-                <div class="social">
+                <div className="social">
                     <FaGithub
                         className="ms-3 me-3"
                         size={"2em"}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import "./Checkout.css";
 
 const SignUp = () => {
     const [user] = useAuthState(auth);
@@ -36,9 +37,9 @@ const SignUp = () => {
     return (
         <div className="form-container">
             <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-                <h2 className="form-title">Checkout Form</h2>
+                <h2 className="form-title mb-4">Checkout Form</h2>
                 <Form onSubmit={handleCreatUser}>
-                    <Form.Group className="mb-3" controlId="formGroupName">
+                    <Form.Group className="mb-4" controlId="formGroupName">
                         <Form.Control
                             onBlur={handleNameBlur}
                             type="text"
@@ -46,7 +47,7 @@ const SignUp = () => {
                             required
                         />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupEmail">
+                    <Form.Group className="mb-4" controlId="formGroupEmail">
                         <Form.Control
                             value={user?.email}
                             readOnly
@@ -55,7 +56,7 @@ const SignUp = () => {
                             required
                         />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupAddress">
+                    <Form.Group className="mb-4" controlId="formGroupAddress">
                         <Form.Control
                             onBlur={handleAddressBlur}
                             type="text"
@@ -63,7 +64,7 @@ const SignUp = () => {
                             required
                         />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupPhone">
+                    <Form.Group className="mb-4" controlId="formGroupPhone">
                         <Form.Control
                             onBlur={handlePhoneBlur}
                             type="text"

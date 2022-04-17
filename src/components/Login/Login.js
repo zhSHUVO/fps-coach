@@ -36,9 +36,9 @@ const Login = () => {
     return (
         <div className="form-container">
             <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-                <h2 className="form-title">Login</h2>
+                <h2 className="form-title mb-4">Login</h2>
                 <Form onSubmit={handleUserSignIn}>
-                    <Form.Group className="mb-3" controlId="formGroupEmail">
+                    <Form.Group className="mb-4" controlId="formGroupEmail">
                         <Form.Control
                             onBlur={handleEmailBlur}
                             type="email"
@@ -46,7 +46,7 @@ const Login = () => {
                             required
                         />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupPassword">
+                    <Form.Group className="mb-4" controlId="formGroupPassword">
                         <Form.Control
                             onBlur={handlePasswordBlur}
                             type="password"
@@ -62,9 +62,9 @@ const Login = () => {
                     </Button>
                 </Form>
                 <p className="mt-3">
-                    New User?
-                    <Link className="text-decoration-none" to="/signup">
-                        SignUp.
+                    New User? <br />
+                    <Link className="text-decoration-none text-danger" to="/signup">
+                         SignUp.
                     </Link>
                 </p>
             </div>

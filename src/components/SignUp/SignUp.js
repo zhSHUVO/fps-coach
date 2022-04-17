@@ -13,7 +13,9 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const [createUserWithEmailAndPassword, user] =
-        useCreateUserWithEmailAndPassword(auth);
+        useCreateUserWithEmailAndPassword(auth, {
+            sendEmailVerification: true,
+        });
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -29,6 +31,7 @@ const SignUp = () => {
 
     if (user) {
         navigate("/home");
+        console.log("user", user);
     }
 
     const handleCreatUser = (event) => {
@@ -48,9 +51,9 @@ const SignUp = () => {
     return (
         <div className="form-container">
             <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
-                <h2 className="form-title">SignUp</h2>
+                <h2 className="form-title mb-4">SignUp</h2>
                 <Form onSubmit={handleCreatUser}>
-                    <Form.Group className="mb-3" controlId="formGroupEmail">
+                    <Form.Group className="mb-4" controlId="formGroupEmail">
                         <Form.Control
                             onBlur={handleEmailBlur}
                             type="email"
@@ -58,7 +61,7 @@ const SignUp = () => {
                             required
                         />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formGroupPassword">
+                    <Form.Group className="mb-4" controlId="formGroupPassword">
                         <Form.Control
                             onBlur={handlePasswordBlur}
                             type="password"
@@ -67,7 +70,7 @@ const SignUp = () => {
                         />
                     </Form.Group>
                     <Form.Group
-                        className="mb-3"
+                        className="mb-4"
                         controlId="formGroupConfirmPassword"
                     >
                         <Form.Control
@@ -83,8 +86,11 @@ const SignUp = () => {
                     </Button>
                 </Form>
                 <p className="mt-3">
-                    Already have an account?
-                    <Link className="text-decoration-none" to="/login">
+                    Already have an account? <br />
+                    <Link
+                        className="text-decoration-none text-danger"
+                        to="/login"
+                    >
                         Login.
                     </Link>
                 </p>
