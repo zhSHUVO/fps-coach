@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const SignUp = () => {
     const [email, setEmail] = useState("");
@@ -13,7 +14,6 @@ const SignUp = () => {
 
     const [createUserWithEmailAndPassword, user] =
         useCreateUserWithEmailAndPassword(auth);
-
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -27,8 +27,8 @@ const SignUp = () => {
         setComfirmPassword(event.target.value);
     };
 
-    if(user){
-        navigate("/home")
+    if (user) {
+        navigate("/home");
     }
 
     const handleCreatUser = (event) => {
@@ -82,13 +82,14 @@ const SignUp = () => {
                         SignUp
                     </Button>
                 </Form>
-                <p>
+                <p className="mt-3">
                     Already have an account?
                     <Link className="text-decoration-none" to="/login">
                         Login.
                     </Link>
                 </p>
             </div>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
