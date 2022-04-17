@@ -22,7 +22,7 @@ const Header = () => {
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="me-auto align-items-start">
                             <LinkContainer to="/checkout">
                                 <Nav.Link>Checkout</Nav.Link>
                             </LinkContainer>
@@ -33,10 +33,7 @@ const Header = () => {
                                 <Nav.Link>About</Nav.Link>
                             </LinkContainer>
                             {user ? (
-                                <Button
-                                    onClick={handleSignOut}
-                                    variant="dark"
-                                >
+                                <Button className="signout" onClick={handleSignOut} variant="dark">
                                     SignOut
                                 </Button>
                             ) : (

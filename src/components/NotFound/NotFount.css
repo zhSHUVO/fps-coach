@@ -1,0 +1,8 @@
+.not-found {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.not-found span {
+    color: #dd1c21;
+}

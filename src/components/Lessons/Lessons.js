@@ -14,10 +14,11 @@ const Lessons = (props) => {
     return (
         <div>
             <h1 className="text-center">My Services</h1>
-            <div className="lesson d-flex w-75 mx-auto">
+            <div className="container">
+            <div className="row w-75 mx-auto">
                 {lessons.map((lesson) => (
-                    <div key={lesson.id}>
-                        <div className="card p-4 m-5">
+                    <div className="col" key={lesson.id}>
+                        <div className="card mt-3 p-2">
                             <img
                                 className="mx-auto mb-3"
                                 src={lesson.img}
@@ -34,6 +35,7 @@ const Lessons = (props) => {
                         </div>
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     );

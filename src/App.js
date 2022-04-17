@@ -6,6 +6,7 @@ import Checkout from "./components/Checkout/Checkout";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
+import NotFound from "./components/NotFound/NotFound";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import ResetPass from "./components/ResetPass/ResetPass";
 import SignUp from "./components/SignUp/SignUp";
@@ -33,6 +34,7 @@ function App() {
                     path="/reset-pass"
                     element={<ResetPass></ResetPass>}
                 ></Route>
+                <Route path="*" element={<NotFound></NotFound>}></Route>
             </Routes>
         </div>
     );
