@@ -4,7 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import "./Checkout.css";
 
-const SignUp = () => {
+const Checkout = () => {
     const [user] = useAuthState(auth);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -82,4 +82,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default Checkout;
