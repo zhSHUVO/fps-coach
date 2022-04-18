@@ -8,14 +8,14 @@
     },
     {
         "id": "2",
-        "name": "Counter-Strike: Global Offensive",
+        "name": "CS:GO",
         "price": "50$",
         "description": "Counter-Strike: Global Offensive is a 2012 multiplayer first-person shooter developed by Valve and Hidden Path Entertainment.",
         "img": "https://raw.githubusercontent.com/zhSHUVO/image-repo/main/fps-couch/csgo-cover.jpg"
     },
     {
         "id": "3",
-        "name": "Tom Clancy's Rainbow Six Siege",
+        "name": "R6",
         "price": "50$",
         "description": "Tom Clancy's Rainbow Six Siege is an online tactical shooter video game developed by Ubisoft Montreal and published by Ubisoft.",
         "img": "https://raw.githubusercontent.com/zhSHUVO/image-repo/main/fps-couch/r6-cover.jpg"
