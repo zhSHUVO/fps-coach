@@ -5,7 +5,7 @@ const Blogs = () => {
     return (
         <div className="d-flex justify-content-center p-5">
             <div className="col-lg-6 col-sm-12">
-                <h1 className="text-center text-danger">Q&A</h1>
+                <h1 className="text-center">Q&A</h1>
                 <div className="mt-5">
                     <h3>
                         Difference between authentication and authorization.

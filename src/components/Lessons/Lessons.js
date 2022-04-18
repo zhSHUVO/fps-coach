@@ -14,6 +14,7 @@ const Lessons = (props) => {
     return (
         <div>
             <h1 className="text-center">My Services</h1>
+            <p className="text-center w-75 mx-auto">I'll help you learn the basics, tips and tricks. Will give you some practice routines for aim, sensitivity, movements etc. I'll help you get over your weaknesses.</p>
             <div className="container">
             <div className="row w-75 mx-auto">
                 {lessons.map((lesson) => (
@@ -29,7 +30,7 @@ const Lessons = (props) => {
                             <p>Trainig Price: {lesson.price}</p>
                             <Link to="/checkout">
                                 <Button variant="danger" type="submit">
-                                    Checkout
+                                    Hire Me
                                 </Button>
                             </Link>
                         </div>

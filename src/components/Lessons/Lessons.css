@@ -1,5 +1,5 @@
 .card {
-    height: 600px;
+    height: 630px;
     position: relative;
     background-color: #000000;
     border: 1px solid #dd1c21;
@@ -8,7 +8,7 @@
 
 .card button {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 30px;
     border-radius: 12px;
 }

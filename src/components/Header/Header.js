@@ -33,7 +33,11 @@ const Header = () => {
                                 <Nav.Link>About</Nav.Link>
                             </LinkContainer>
                             {user ? (
-                                <Button className="signout" onClick={handleSignOut} variant="dark">
+                                <Button
+                                    className="signout"
+                                    onClick={handleSignOut}
+                                    variant="dark"
+                                >
                                     SignOut
                                 </Button>
                             ) : (
